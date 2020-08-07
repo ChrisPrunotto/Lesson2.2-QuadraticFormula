@@ -2,19 +2,28 @@
 //
 
 #include <iostream>
+#include <cmath>
 
-int main()
-{
-    std::cout << "Hello World!\n";
-}
+	int main() {
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+		double a, b, c, root1, root2;
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+		std::cout << "Enter a: ";
+		std::cin >> a;
+
+		std::cout << "Enter b: ";
+		std::cin >> b;
+
+		std::cout << "Enter c: ";
+		std::cin >> c;
+
+		root1 = ((b * -1) + std::sqrt((b * b) - (4 * a * c))) / (2 * a);
+		root2 = ((b * -1) - std::sqrt((b * b) - (4 * a * c))) / (2 * a);
+
+		std::cout << "\nA: " << a << std::endl 
+			<< "B: " << b << std::endl 
+			<< "C: " << c << std::endl 
+			<< "Root 1: " << root1 << std::endl
+			<< "Root 2: " << root2 << std::endl;
+
+	}
